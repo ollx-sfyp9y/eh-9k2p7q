@@ -1,0 +1,445 @@
+{
+  "version": "2026-07-24",
+  "placeholders": {
+    "purpose_en": "on vacation",
+    "purpose_zh": "度假",
+    "purpose_noun": "vacation",
+    "city_en": "Los Angeles",
+    "city_zh": "洛杉磯",
+    "days_en": "ten",
+    "days_zh": "10",
+    "hotel_en": "the Hilton Hotel",
+    "hotel_zh": "希爾頓飯店",
+    "occupation_en": "marketing",
+    "occupation_zh": "行銷",
+    "cash_en": "eight hundred US dollars",
+    "cash_zh": "800 美金",
+    "food_en": "some packaged snacks and tea bags",
+    "food_zh": "一些包裝零食和茶包",
+    "companions_en": "my friend",
+    "companions_zh": "朋友",
+    "return_date_en": "September 15th",
+    "return_date_zh": "9 月 15 日"
+  },
+  "categories": [
+    {
+      "id": "purpose",
+      "icon": "🎯",
+      "title_zh": "入境目的",
+      "title_en": "Purpose of visit",
+      "type": "qa",
+      "questions": [
+        {
+          "id": "purpose-1",
+          "en": "What is the purpose of your trip?",
+          "zh": "你這趟來的目的是什麼？",
+          "tip_zh": "最常見的第一題。回答要短、誠實、跟你的簽證和事實一致，不要背長篇大論。",
+          "answers": [
+            { "tag": "最穩妥", "en": "I'm here {{purpose_en}}. I'll be in {{city_en}} for {{days_en}} days.", "zh": "我來{{purpose_zh}}，會在{{city_zh}}待 {{days_zh}} 天。" },
+            { "tag": "簡短版", "en": "Vacation. Just sightseeing.", "zh": "度假，純觀光。" }
+          ]
+        },
+        {
+          "id": "purpose-2",
+          "en": "Why are you visiting the United States?",
+          "zh": "你為什麼來美國？",
+          "tip_zh": "跟上一題是同一件事，換個問法而已，答案一樣就好。",
+          "answers": [
+            { "tag": "最穩妥", "en": "I'm here {{purpose_en}} — it's a trip I've been planning for a long time.", "zh": "我來{{purpose_zh}}，這趟旅行我計畫很久了。" },
+            { "tag": "簡短版", "en": "Just {{purpose_noun}}.", "zh": "就是{{purpose_zh}}。" }
+          ]
+        },
+        {
+          "id": "purpose-3",
+          "en": "Is this your first time in the U.S.?",
+          "zh": "這是你第一次來美國嗎？",
+          "tip_zh": "照實回答就好，海關電腦查得到你的入境紀錄。",
+          "answers": [
+            { "tag": "如果是第一次", "en": "Yes, it's my first time.", "zh": "對，這是我第一次來。" },
+            { "tag": "如果來過", "en": "No, I've been here once before, a few years ago.", "zh": "不是，我幾年前來過一次。" }
+          ]
+        },
+        {
+          "id": "purpose-4",
+          "en": "Are you here for business or pleasure?",
+          "zh": "你是來出差還是休閒旅遊？",
+          "tip_zh": "觀光、度假、探親都算 pleasure；去開會、看展那種短期商務才算 business。照實回答就好。",
+          "answers": [
+            { "tag": "最穩妥", "en": "Pleasure — I'm here {{purpose_en}}.", "zh": "休閒——我是來{{purpose_zh}}的。" },
+            { "tag": "簡短版", "en": "Pleasure.", "zh": "休閒旅遊。" }
+          ]
+        },
+        {
+          "id": "purpose-5",
+          "en": "What are you planning to do while you're here?",
+          "zh": "你在美國期間打算做什麼？",
+          "tip_zh": "講大方向就好（觀光、逛街、看景點），不用背出每天的行程表。",
+          "answers": [
+            { "tag": "最穩妥", "en": "Mostly sightseeing — I want to see the main spots in {{city_en}}, and do some shopping.", "zh": "主要是觀光，想看看{{city_zh}}的著名景點，再逛街購物。" },
+            { "tag": "簡短版", "en": "Sightseeing and shopping.", "zh": "觀光和購物。" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stay",
+      "icon": "📅",
+      "title_zh": "停留時間與回程",
+      "title_en": "Length of stay",
+      "type": "qa",
+      "questions": [
+        {
+          "id": "stay-1",
+          "en": "How long will you be staying in the U.S.?",
+          "zh": "你會在美國待多久？",
+          "tip_zh": "天數要跟回程機票對得上。免簽（ESTA）最多 90 天。",
+          "answers": [
+            { "tag": "最穩妥", "en": "I'll be here for {{days_en}} days. I fly back on {{return_date_en}}.", "zh": "我會待 {{days_zh}} 天，{{return_date_zh}}飛回去。" },
+            { "tag": "簡短版", "en": "About {{days_en}} days.", "zh": "大約 {{days_zh}} 天。" }
+          ]
+        },
+        {
+          "id": "stay-2",
+          "en": "When are you flying back?",
+          "zh": "你什麼時候飛回去？",
+          "answers": [
+            { "tag": "最穩妥", "en": "My return flight is on {{return_date_en}}.", "zh": "我的回程班機是{{return_date_zh}}。" },
+            { "tag": "簡短版", "en": "On {{return_date_en}}.", "zh": "{{return_date_zh}}。" }
+          ]
+        },
+        {
+          "id": "stay-3",
+          "en": "Do you have a return ticket?",
+          "zh": "你有回程機票嗎？",
+          "tip_zh": "先把回程機票的畫面截圖存在手機相簿，隨時拿得出來。",
+          "answers": [
+            { "tag": "最穩妥", "en": "Yes, I do. I can show you on my phone if you'd like.", "zh": "有，需要的話我可以用手機給你看。" },
+            { "tag": "簡短版", "en": "Yes, I do.", "zh": "有。" }
+          ]
+        },
+        {
+          "id": "stay-4",
+          "en": "Where will you go after the U.S.?",
+          "zh": "離開美國之後你要去哪裡？",
+          "answers": [
+            { "tag": "最穩妥", "en": "I'm flying straight back to Taiwan.", "zh": "我直接飛回台灣。" },
+            { "tag": "簡短版", "en": "Back to Taiwan.", "zh": "回台灣。" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lodging",
+      "icon": "🏨",
+      "title_zh": "住宿地點",
+      "title_en": "Where are you staying",
+      "type": "qa",
+      "questions": [
+        {
+          "id": "lodging-1",
+          "en": "Where will you be staying?",
+          "zh": "你會住在哪裡？",
+          "tip_zh": "把飯店名稱和地址存在手機備忘錄或相簿，被追問地址時直接拿出來看。",
+          "answers": [
+            { "tag": "最穩妥", "en": "I'll be staying at {{hotel_en}} in {{city_en}}.", "zh": "我會住在{{city_zh}}的{{hotel_zh}}。" },
+            { "tag": "簡短版", "en": "At {{hotel_en}}.", "zh": "住{{hotel_zh}}。" }
+          ]
+        },
+        {
+          "id": "lodging-2",
+          "en": "Are you staying with friends or family?",
+          "zh": "你是住親友家嗎？",
+          "answers": [
+            { "tag": "如果住飯店", "en": "No, I'm staying at a hotel.", "zh": "不是，我住飯店。" },
+            { "tag": "如果住親友家", "en": "Yes, I'm staying with my friend. I have the address right here.", "zh": "對，我住朋友家，地址在這裡。" }
+          ]
+        },
+        {
+          "id": "lodging-3",
+          "en": "Do you have the address of where you're staying?",
+          "zh": "你有住宿的地址嗎？",
+          "answers": [
+            { "tag": "最穩妥", "en": "Yes, it's on my phone. One moment, please.", "zh": "有，在我手機裡，請稍等一下。" },
+            { "tag": "簡短版", "en": "Yes, right here.", "zh": "有，在這裡。" }
+          ]
+        },
+        {
+          "id": "lodging-4",
+          "en": "Will you be staying anywhere else during your trip?",
+          "zh": "這趟旅程還會住其他地方嗎？",
+          "answers": [
+            { "tag": "如果只住一處", "en": "No, just that hotel the whole time.", "zh": "沒有，全程都住那間飯店。" },
+            { "tag": "如果會換地方", "en": "Yes, I'll spend a few nights in another city as well. I have all the bookings on my phone.", "zh": "會，我也會去另一個城市住幾晚，訂房紀錄都在我手機裡。" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "occupation",
+      "icon": "💼",
+      "title_zh": "職業與身分",
+      "title_en": "Occupation",
+      "type": "qa",
+      "questions": [
+        {
+          "id": "occupation-1",
+          "en": "What do you do for a living?",
+          "zh": "你的工作是什麼？",
+          "tip_zh": "講大類就好（行銷、會計、老師），不用解釋職稱細節。",
+          "answers": [
+            { "tag": "最穩妥", "en": "I work in {{occupation_en}} back in Taiwan.", "zh": "我在台灣做{{occupation_zh}}相關的工作。" },
+            { "tag": "簡短版", "en": "I work in {{occupation_en}}.", "zh": "我做{{occupation_zh}}的。" }
+          ]
+        },
+        {
+          "id": "occupation-2",
+          "en": "Who do you work for?",
+          "zh": "你在哪間公司工作？",
+          "tip_zh": "可以直接講公司名字；講不出英文名就說 a company in Taiwan。",
+          "answers": [
+            { "tag": "最穩妥", "en": "I work for a company in Taiwan.", "zh": "我在台灣的一間公司上班。" },
+            { "tag": "簡短版", "en": "A company in Taiwan.", "zh": "台灣的公司。" }
+          ]
+        },
+        {
+          "id": "occupation-3",
+          "en": "Are you planning to work while you're in the U.S.?",
+          "zh": "你打算在美國期間工作嗎？",
+          "tip_zh": "只要你確實不會在美國工作，就清楚堅定地說 No，猶豫容易被進一步詢問。一切照實回答——觀光身分在美國工作是大忌。",
+          "answers": [
+            { "tag": "最穩妥", "en": "No, not at all. I'm just here {{purpose_en}}.", "zh": "完全沒有，我只是來{{purpose_zh}}的。" },
+            { "tag": "簡短版", "en": "No.", "zh": "沒有。" }
+          ]
+        },
+        {
+          "id": "occupation-4",
+          "en": "Do you have a job to go back to in Taiwan?",
+          "zh": "你回台灣還有工作嗎？",
+          "tip_zh": "海關想確認你會回國。有穩定工作＝會回去，是加分答案。",
+          "answers": [
+            { "tag": "最穩妥", "en": "Yes, I do. I'm going right back to work after this trip.", "zh": "有，這趟旅程結束我就回去上班。" },
+            { "tag": "簡短版", "en": "Yes.", "zh": "有。" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "money",
+      "icon": "💵",
+      "title_zh": "金錢申報",
+      "title_en": "Currency declaration",
+      "type": "qa",
+      "questions": [
+        {
+          "id": "money-1",
+          "en": "How much money are you carrying?",
+          "zh": "你身上帶多少錢？",
+          "tip_zh": "講大約數字就好，記得提一句有信用卡，表示旅費充足。",
+          "answers": [
+            { "tag": "最穩妥", "en": "About {{cash_en}} in cash, plus credit cards.", "zh": "現金大約 {{cash_zh}}，另外還有信用卡。" },
+            { "tag": "簡短版", "en": "About {{cash_en}}.", "zh": "大約 {{cash_zh}}。" }
+          ]
+        },
+        {
+          "id": "money-2",
+          "en": "Are you carrying more than ten thousand dollars?",
+          "zh": "你有帶超過一萬美金嗎？",
+          "tip_zh": "一萬美金是「同行的人加總」計算，而且不只現金，旅行支票等也算。帶超過不違法但必須申報；沒申報被查到會被沒收＋罰款。沒帶那麼多就放心說 No。",
+          "answers": [
+            { "tag": "最穩妥", "en": "No, nowhere near that. Just {{cash_en}} or so.", "zh": "沒有，差得遠，大概就 {{cash_zh}} 左右。" },
+            { "tag": "簡短版", "en": "No.", "zh": "沒有。" }
+          ]
+        },
+        {
+          "id": "money-3",
+          "en": "Who paid for this trip?",
+          "zh": "這趟旅費是誰出的？",
+          "answers": [
+            { "tag": "最穩妥", "en": "I paid for everything myself.", "zh": "全部都是我自己出的。" },
+            { "tag": "簡短版", "en": "I did.", "zh": "我自己。" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "items",
+      "icon": "🧳",
+      "title_zh": "行李與攜帶物品",
+      "title_en": "Food, gifts & items",
+      "type": "qa",
+      "questions": [
+        {
+          "id": "items-1",
+          "en": "Are you bringing any food with you?",
+          "zh": "你有帶食物嗎？",
+          "tip_zh": "台灣人最常被問的一題。所有食物都要誠實申報——包裝零食、茶葉申報後通常沒問題；被查到沒申報才會罰錢。",
+          "answers": [
+            { "tag": "如果有帶", "en": "Yes, {{food_en}} — everything is sealed and packaged.", "zh": "有，{{food_zh}}，都是密封包裝的。" },
+            { "tag": "如果沒帶", "en": "No, I don't have any food with me.", "zh": "沒有，我沒帶食物。" }
+          ]
+        },
+        {
+          "id": "items-2",
+          "en": "Do you have any fresh fruit, vegetables, or meat?",
+          "zh": "你有帶新鮮水果、蔬菜或肉類嗎？",
+          "tip_zh": "肉類製品幾乎都不能帶——肉鬆、肉乾、含肉泡麵都算。出發前就不要放進行李。",
+          "answers": [
+            { "tag": "最穩妥", "en": "No fresh food, and no meat. Only sealed, packaged snacks.", "zh": "沒有生鮮食品也沒有肉類，只有密封包裝的零食。" },
+            { "tag": "簡短版", "en": "No.", "zh": "沒有。" }
+          ]
+        },
+        {
+          "id": "items-3",
+          "en": "Did you pack your bags yourself?",
+          "zh": "行李是你自己打包的嗎？",
+          "answers": [
+            { "tag": "最穩妥", "en": "Yes, I packed everything myself.", "zh": "對，全部都是我自己打包的。" },
+            { "tag": "簡短版", "en": "Yes.", "zh": "是。" }
+          ]
+        },
+        {
+          "id": "items-4",
+          "en": "Are you carrying anything for someone else?",
+          "zh": "你有幫別人帶東西嗎？",
+          "tip_zh": "絕對不要幫別人帶來路不明的東西，這題也要能毫不猶豫說 No。",
+          "answers": [
+            { "tag": "最穩妥", "en": "No, everything in my luggage is mine.", "zh": "沒有，行李裡的東西都是我自己的。" },
+            { "tag": "簡短版", "en": "No, it's all mine.", "zh": "沒有，都是我的。" }
+          ]
+        },
+        {
+          "id": "items-5",
+          "en": "Do you have anything to declare?",
+          "zh": "你有東西要申報嗎？",
+          "tip_zh": "有食物就直接申報，不用等對方追問；其他不確定的東西就用問的，誠實永遠比亂答 No 安全。",
+          "answers": [
+            { "tag": "如果有帶食物", "en": "Yes, I have {{food_en}} to declare.", "zh": "有，我有{{food_zh}}要申報。" },
+            { "tag": "如果沒帶", "en": "No, nothing to declare.", "zh": "沒有要申報的東西。" }
+          ]
+        },
+        {
+          "id": "items-6",
+          "en": "Are you bringing any gifts?",
+          "zh": "你有帶禮物要送人嗎？",
+          "answers": [
+            { "tag": "最穩妥", "en": "Yes, a few small souvenirs from Taiwan — snacks and tea.", "zh": "有，一些台灣的小伴手禮，零食和茶葉。" },
+            { "tag": "簡短版", "en": "Just some small souvenirs.", "zh": "就一些小伴手禮。" }
+          ]
+        },
+        {
+          "id": "items-7",
+          "en": "Are you bringing any medication?",
+          "zh": "你有帶藥品嗎？",
+          "tip_zh": "藥品要照實申報。自用藥帶合理份量（一般以 90 天內用量為原則），處方藥帶著本人的處方簽或藥袋；部分管制成分可能不准入境，不確定的藥出發前先查。",
+          "answers": [
+            { "tag": "如果有帶", "en": "Yes, just some over-the-counter medicine for personal use, like cold medicine.", "zh": "有，一些自用的成藥，像感冒藥。" },
+            { "tag": "如果沒帶", "en": "No, I'm not.", "zh": "沒有。" }
+          ]
+        },
+        {
+          "id": "items-8",
+          "en": "Do you have any alcohol or tobacco?",
+          "zh": "你有帶酒或菸嗎？",
+          "tip_zh": "滿 21 歲通常可以免稅帶 1 公升酒；超過通常是申報＋補稅，不是違規。數量正常就照實說，不用緊張。",
+          "answers": [
+            { "tag": "如果沒帶", "en": "No, I don't.", "zh": "沒有。" },
+            { "tag": "如果有帶", "en": "Yes, one bottle of wine — it's a gift.", "zh": "有，一瓶酒，是要送人的。" }
+          ]
+        },
+        {
+          "id": "items-9",
+          "en": "Have you visited a farm or been in contact with any livestock recently?",
+          "zh": "你最近有去過農場或接觸過家畜嗎？",
+          "tip_zh": "這是申報單上的固定題。有去過就照實申報，後續可能有鞋子清潔或農業檢查等處理，配合就好。",
+          "answers": [
+            { "tag": "如果沒有", "en": "No, I haven't.", "zh": "沒有。" },
+            { "tag": "如果有", "en": "Yes, I visited a farm in Taiwan recently.", "zh": "有，我最近在台灣去過農場。" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "companions",
+      "icon": "👥",
+      "title_zh": "同行者與親友",
+      "title_en": "Traveling companions",
+      "type": "qa",
+      "questions": [
+        {
+          "id": "companions-1",
+          "en": "Are you traveling alone?",
+          "zh": "你是一個人來的嗎？",
+          "answers": [
+            { "tag": "如果一個人", "en": "Yes, just me.", "zh": "對，就我一個人。" },
+            { "tag": "如果有同行", "en": "No, I'm traveling with {{companions_en}}.", "zh": "不是，我跟{{companions_zh}}一起來的。" }
+          ]
+        },
+        {
+          "id": "companions-2",
+          "en": "Do you know anyone in the United States?",
+          "zh": "你在美國有認識的人嗎？",
+          "tip_zh": "照實回答。有朋友就說有，沒有就說沒有，這題沒有標準答案。",
+          "answers": [
+            { "tag": "如果沒有", "en": "No, I don't know anyone here.", "zh": "沒有，我在這裡不認識任何人。" },
+            { "tag": "如果有", "en": "Yes, I have a friend living in {{city_en}}. We'll meet up during my trip.", "zh": "有，我有個朋友住在{{city_zh}}，這趟會見面。" }
+          ]
+        },
+        {
+          "id": "companions-3",
+          "en": "Is anyone meeting you at the airport?",
+          "zh": "有人來機場接你嗎？",
+          "answers": [
+            { "tag": "如果沒有", "en": "No one — I'll take a taxi to my hotel.", "zh": "沒有，我會自己搭車去飯店。" },
+            { "tag": "如果有", "en": "Yes, my friend is picking me up.", "zh": "有，我朋友會來接我。" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "survival",
+      "icon": "🆘",
+      "title_zh": "救命句（聽不懂怎麼辦）",
+      "title_en": "Survival phrases",
+      "type": "phrase",
+      "intro_zh": "聽不懂完全不用慌——海關每天遇到幾百個英文不好的旅客。用這些句子請對方放慢或重講，比亂猜亂答安全一百倍。",
+      "questions": [
+        {
+          "id": "survival-1",
+          "en": "Sorry, could you say that again, please?",
+          "zh": "不好意思，可以請你再說一次嗎？",
+          "tip_zh": "沒聽清楚的第一反應就用這句，非常常用、非常禮貌。"
+        },
+        {
+          "id": "survival-2",
+          "en": "Could you speak a little more slowly, please?",
+          "zh": "可以請你講慢一點嗎？",
+          "tip_zh": "放心開口請對方放慢，他們寧願你聽懂再回答。"
+        },
+        {
+          "id": "survival-3",
+          "en": "Sorry, my English isn't very good.",
+          "zh": "不好意思，我英文不太好。",
+          "tip_zh": "先講這句，對方通常會改用比較簡單的英文慢慢說。"
+        },
+        {
+          "id": "survival-4",
+          "en": "I'm sorry, I don't understand.",
+          "zh": "抱歉，我聽不懂。",
+          "tip_zh": "真的聽不懂就直說，不要點頭裝懂——亂答 Yes 才會出事。"
+        },
+        {
+          "id": "survival-5",
+          "en": "Here's my passport.",
+          "zh": "這是我的護照。",
+          "tip_zh": "遞護照時講這句就很得體。"
+        },
+        {
+          "id": "survival-6",
+          "en": "Excuse me, where should I go next?",
+          "zh": "請問我接下來要去哪裡？",
+          "tip_zh": "過完關不知道往哪走（領行李、轉機）就用這句問工作人員。"
+        }
+      ]
+    }
+  ]
+}
