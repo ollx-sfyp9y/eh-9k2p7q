@@ -1,6 +1,6 @@
 /* 入境小幫手 service worker — 離線快取
    VERSION 由 tools/build_audio.py 自動改寫；改版後瀏覽器會自動更新快取 */
-const VERSION = 'v-3c2b15e612';
+const VERSION = 'v-c4d517ff56';
 const CACHE = `entry-helper-${VERSION}`;
 
 self.addEventListener('install', (e) => {
